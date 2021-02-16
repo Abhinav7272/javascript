@@ -5,7 +5,7 @@ let form=document.getElementById('fom');
 let body = document.querySelector("body");
 
 let display = document.querySelector(".display");
-display.innerHTML = "I love baby Anushka"
+display.innerHTML = ""
 
 body.style.backgroundColor = "red";
 console.log("hii");
