@@ -1,0 +1,21 @@
+.outer{
+    height: 300px;
+    width: 100%;
+}
+#display{
+    font-size: 100px;
+    margin: 0px auto;
+    text-align: center;
+}
+.buttons{
+    text-align: center;
+}
+.buttons > button{
+    width: 80px;
+}
+body{
+    display: flex;
+    /* justify-content: center; */
+    height: 100vh;
+    align-items: center;
+}
