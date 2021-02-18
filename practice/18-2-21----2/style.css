@@ -8,15 +8,34 @@
     height: 50%;
     width: 50%;
     transition: transform 2s cubic-bezier(0.2, 0.9, 0.32, 1.28);
+    animation: left-to-right 1s  cubic-bezier(0.2, 0.9, 0.32, 1.28) forwards infinite alternate ;
+
 }
 .outer:hover .inner{
     border-radius: 10%;
-    animation: left-to-right 1s  cubic-bezier(0.2, 0.9, 0.32, 1.28) forwards;
+    animation-play-state: paused;
+    /* animation: left-to-right 1s  cubic-bezier(0.2, 0.9, 0.32, 1.28) forwards 3 alternate 3s; */
 }
 
 @keyframes left-to-right{
-    100%{
+    0%{ background-color: antiquewhite;
+        transform: translateX(0%);
+    }
+    33%{ background-color: rgb(6, 97, 177);
+        transform: translateY(100%);
+    }
+    66%{
+        background-color: rgb(15, 167, 48);
+        border-radius: 10%;
+        transform: translateX(100%) translateY(100%) ;
+
+
+    }
+    100%{ 
+        background-color: rgb(162, 224, 17);
+        border-radius: 0%;
         transform : translateX(100%);
 
     }
+
 }
