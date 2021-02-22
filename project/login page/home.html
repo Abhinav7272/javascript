@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 500px;
+            height: 400px;
+            border: 1px solid black;
+            margin : 0 auto;
+            text-align: center;
+            justify-items: cener;
+            padding: 20px;
+            box-sizing: border-box;
+            
+        }
+        input{
+            padding: 20px;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>Welcome to login page</h1></center>
+    
+    <hr>
+    <div>
+        username : <br>
+       <input type="text" name="text" id="username">
+       <br><br>
+       password: <br>
+       <input type="password" name="text" id="password">
+       <br><br>
+       <button onclick="login()">submit</button>
+    </div>
+    <script>
+        function login(){
+            var user = document.getElementById('username').value;
+            var pass = document.getElementById('password').value;
+             if(user=="hello" && pass=="world"){
+                 location.assign("2.html")
+             }
+             else{
+                 window.alert("login failed")
+             }
+        }
+    </script>
+</body>
+</html>
