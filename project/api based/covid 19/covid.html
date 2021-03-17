@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+     <script src="script.js"></script>
+    <title>coviddashboard</title>
+</head>
+<body>
+   <div class="container">
+       <h1 class = "text-center mt-5">COVID 19 DASHBOARD</h1>
+       <br><br>
+    <table class="table tabel-hover">
+        <tr>
+            <th>Total Cases</th>
+            <th> Total death </th>
+            <th>Total recovered</th>
+        </tr>
+        <tr>
+            <td  id ="tc"></td>
+            <td id="td"></td>
+            <td id="tr"></td>
+        </tr>
+    </table>
+    <div class="d-grid gap-2">
+        <button onclick="getdata()" class="btn btn-primary" type="button">update</button>
+      </div>    
+   </div>
+      
+    
+</body>
+</html>

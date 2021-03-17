@@ -8,11 +8,24 @@
 <script type="text/javascript">
 //Find out the id of user who completed maximum number of tasks and minimum number of tasks.
 tasks = [0,0,0,0,0,0,0,0,0,0];
+count = [0,0,0,0,0,0,0,0,0,0];
 for(i=0; i<data.length; i++){
     if(data[i]['completed']==true){
         tasks[data[i]['userId']-1]++;
     }
 }
+m=0;
+j=-1;
+for( i=0;i<tasks.length;i++){
+    if(m < tasks[i]){j=i;}
+}
+output={};
+output[3]=4;
+output[j]=i;
+for(i=0;i<output.length;i++){
+     console.log(output[i]);
+}
+
 </script>
 </body>
-</html>
+</html
